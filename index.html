@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <aside class="filter-menu">
+            
+            <div class="cuartos">
+                <h4>Cantidad de cuartos</h4>
+                <input name="cuartos" type="number" min="0">
+            </div>
+
+            <h4>Metros cuadrados</h4>
+
+            <div class="metros">
+                <div class="filters-wrap desde">
+                    <label for="desde">Desde</label>
+                    <input name="desde" type="number" min="0">
+                </div>
+
+                <div class="filters-wrap hasta">
+                    <label for="hasta">Hasta</label>
+                    <input name="hasta" type="number" min="0">
+                </div>
+
+            </div>
+
+            <button id="filterBtn">Filtrar</button> <button id="resetBtn">Resetear</button>
+
+        </aside>
+
+        <main class="content">
+            <div class="properties-results">
+                <span id="property-count"></span>
+            </div>
+
+            <div id="properties-wrapper">
+
+
+            </div> 
+        </main>
+    </div>
+
+    <script src="/assets/js/scripts.js"></script>
+</body>
+</html>
